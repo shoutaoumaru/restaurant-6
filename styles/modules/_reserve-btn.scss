@@ -9,16 +9,15 @@
     bottom: 5%;
     left: 0;
     z-index: 9999;
-    background-color: $cSubWhite;
-    // backdrop-filter: blur(12px);
-    padding: 10px 20px;
+    background-color: rgb(240, 240, 240);
+    padding: 20px 20px;
     border-right: 2px solid $cBlack;
     height: 120px;
     transition: all .5s;
     border-bottom: 1px solid $cGray;
 
     & span {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 
@@ -27,13 +26,13 @@
     bottom: 5%;
     left: 0;
     height: 120px;
-    background-color: $cSubWhite;
-    padding: 20px 20px;
+    background-color: rgb(240, 240, 240);
+    padding: 20px 10px;
     border-right: 2px solid $cBlack;
     border-bottom: 1px solid $cGray;
     width: 250px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     z-index: 6000;
     text-align: center;
