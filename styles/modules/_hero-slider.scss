@@ -1,0 +1,81 @@
+.swiper-container {
+  overflow: visible !important;
+}
+
+.swiper-slide {
+  overflow: hidden;
+
+  // &-active {
+
+  //   & .hero-img {
+  //     animation: zoom 6.5s forwards;
+  //   }
+  // }
+}
+
+//**********  スクロールダウン  ********
+.scrolldown {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  z-index: 2;
+  padding: 10px 10px 80px;
+  overflow: hidden;
+  color: $cWhite;
+  font-size: 12px;
+
+  @media (min-width:960px) {
+    font-size: 28px;
+  }
+
+  line-height: 1;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 1px;
+    height: 80px;
+    background: $cWhite;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 60px;
+    background: $cBlack;
+  }
+
+  &::after {
+    height: 20px;
+    animation: sdl 1.5s ease infinite;
+  }
+
+  @keyframes sdl {
+    0% {
+      transform: translateY(-55px);
+    }
+
+    100% {
+      transform: translateY(45px);
+    }
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

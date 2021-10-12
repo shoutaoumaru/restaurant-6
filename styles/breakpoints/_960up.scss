@@ -1,0 +1,70 @@
+.p-title {
+  font-size: 42px;
+}
+
+.top-view {
+  &__content {
+    margin-top: -46px;
+  }
+}
+
+.p-concept {
+  &__desc {
+    padding: 60px;
+  }
+
+  &__title {
+    small {
+      font-size: 20px;
+      margin-left: -32px;
+    }
+  }
+}
+
+.p-menu {
+  .c-container {
+    padding: 5vw 10vw 0 10vw;
+  }
+
+  &__link {
+    width: 48%;
+  }
+
+  &__txt {
+    width: 48%;
+  }
+}
+
+.p-special {
+  .hero {
+    .swiper-slide {
+      & img {
+        height: 36vh;
+      }
+    }
+  }
+}
+
+.p-instagram {
+  .more-link {
+    font-size: 20px;
+  }
+}
+
+.p-contact {
+  .c-container {
+    margin: 0 10vw;
+    padding: 60px 0;
+
+    & a {
+      .p-title {
+        padding-left: 70px;
+
+        &::before {
+          height: 50px;
+          width: 50px;
+        }
+      }
+    }
+  }
+}

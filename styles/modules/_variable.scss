@@ -1,0 +1,194 @@
+$cShadowBlack :black;
+$cBlack: rgb(39, 39, 39);
+$cSubBlack: #586166;
+$cGray: #949494;
+$cWhite:#fff;
+$cSubWhite:rgb(204, 204, 204);
+$cSubBlue: #e2eaf3;
+$cOrange :#F99900;
+$c-concept: rgba(70, 82, 43, 0.623);
+$c-instaBg:#e2ddd7;
+$breakpoints: ('md': 'screen and (min-width: 600px)',
+  'lr': 'screen and (min-width: 960px)',
+  'lg': 'screen and (min-width: 1200px)',
+) !default;
+
+.c-txt-lg {
+  font-size: 26px;
+  letter-spacing: 2px;
+  line-height: 2;
+
+  @include mq(md) {
+    font-size: 30px;
+  }
+
+  @include mq(lr) {
+    font-size: 36px;
+  }
+
+  @include mq(lg) {
+    font-size: 40px;
+  }
+}
+
+.c-txt-lr {
+  font-size: 24px;
+  letter-spacing: 4px;
+  line-height: 2;
+
+  @include mq(md) {
+    font-size: 24px;
+  }
+
+  @include mq(lr) {
+    font-size: 32px;
+  }
+
+  @include mq(lg) {
+    font-size: 36px;
+  }
+}
+
+.c-txt-md {
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 2;
+
+  @include mq(md) {
+    font-size: 20px;
+  }
+
+  @include mq(lr) {
+    font-size: 22px;
+  }
+
+  @include mq(lg) {
+    font-size: 24px;
+  }
+}
+
+.c-txt-sm {
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 2;
+
+  @include mq(md) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @include mq(lr) {
+    font-size: 18px;
+  }
+
+  @include mq(lg) {
+    font-size: 18px;
+  }
+}
+
+.c-txt-xs {
+  font-size: 10px;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: $cOrange;
+
+  @include mq(md) {
+    font-size: 12px;
+  }
+
+  @include mq(lr) {
+    font-size: 18px;
+  }
+
+  @include mq(lg) {
+    font-size: 16px;
+  }
+}
+
+.mb-sm {
+  margin-bottom: 30px;
+
+  @include mq(md) {
+    margin-bottom: 30px;
+  }
+
+  @include mq(lr) {
+    margin-bottom: 50px;
+  }
+}
+
+.mb-md {
+  margin-bottom: 50px;
+
+  @include mq(md) {
+    margin-bottom: 60px;
+  }
+
+  @include mq(lr) {
+    margin-bottom: 100px;
+  }
+}
+
+.mb-lr {
+  margin-bottom: 80px;
+
+  @include mq(md) {
+    margin-bottom: 100px;
+  }
+
+  @include mq(lr) {
+    margin-bottom: 120px;
+  }
+}
+
+.pb-sm {
+  padding-bottom: 30px;
+
+  @include mq(md) {
+    padding-bottom: 30px;
+  }
+
+  @include mq(lr) {
+    padding-bottom: 50px;
+  }
+}
+
+.pb-md {
+  padding-bottom: 50px;
+
+  @include mq(md) {
+    padding-bottom: 60px;
+  }
+
+  @include mq(lr) {
+    padding-bottom: 100px;
+  }
+}
+
+.pb-lr {
+  padding-bottom: 80px;
+
+  @include mq(md) {
+    padding-bottom: 100px;
+  }
+
+  @include mq(lr) {
+    padding-bottom: 200px;
+  }
+}
+
+.c-container {
+  padding: 0 5vw;
+
+  @include mq(md) {
+    padding: 0 3vw;
+  }
+
+  @include mq(lr) {
+    padding: 0 5vw;
+  }
+
+  @include mq(lg) {
+    padding: 0 8vw;
+  }
+}
